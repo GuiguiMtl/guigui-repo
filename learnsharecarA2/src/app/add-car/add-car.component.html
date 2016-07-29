@@ -1,0 +1,10 @@
+<button (click)="showCar()" class="w3-btn-block w3-theme-l1 w3-left-align w3-theme-d1"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Car</button>
+<div id="car" class="w3-accordion-content w3-container   w3-show">
+  <p>
+    <label class="w3-label">Car Name :</label>
+    <input [(ngModel)]="car.name" class="w3-input" type="text">
+  </p>
+  <label class="w3-label">Car Description :</label>
+  <p contenteditable="true" class="w3-border w3-padding">{{car.description}}</p>
+  <button type="button" class="w3-btn w3-theme"><i class="fa fa-pencil"></i> &nbsp;Post</button> 
+</div>
